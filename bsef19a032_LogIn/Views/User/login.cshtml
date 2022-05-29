@@ -1,0 +1,48 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+	<section class="ftco-section">
+		<div class="container">
+			
+			<div class="row justify-content-center">
+					<form method = "post" action="/User/login" class="signin-form">
+			      		<div class="form-group mb-3">
+			      			<label class="label" for="Username">Username</label>
+			      			<input type="text" class="form-control" placeholder="Username" name = "Username" required>
+			      		</div>
+						<div class="form-group mb-3">
+		            		<label class="label" for="Password">Password</label>
+						<input type="password" class="form-control" placeholder="Password" name = "Password" required>
+						</div>
+						<div class="w-50 text-md-right">
+							<p style="color:red;">@Model</p>
+						</div>
+						<div class="form-group">
+		            		<button type="submit" class="form-control btn btn-primary submit px-3">Sign In</button>
+						</div>
+						<div class="form-group d-md-flex">
+		            		<div class="w-50 text-left">
+			            		<label class="checkbox-wrap checkbox-primary mb-0">Remember Me
+									  <input type="checkbox" checked>
+									  <span class="checkmark"></span>
+										</label>
+									</div>
+									<div class="w-50 text-md-right">
+										<a href="#">Forgot Password</a>
+									</div>
+						</div>
+					</form>
+		        </div>
+		      </div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+  <script src="~/js2/jquery.min.js"></script>
+  <script src="~/js2/popper.js"></script>
+  <script src="~/js2/bootstrap.min.js"></script>
+  <script src="~/js2/main.js"></script>
+

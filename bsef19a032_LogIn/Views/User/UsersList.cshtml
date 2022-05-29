@@ -1,0 +1,23 @@
+﻿@model List<bsef19a032_LogIn.Models.User>
+<html>
+<head>
+    <title>Users List</title>
+</head>
+<body>
+    <table border = "1">
+        <thead>
+            <th>Username</th>
+            <th>Password</th>
+        </thead>
+        <tbody>
+            @foreach(bsef19a032_LogIn.Models.User u in Model)
+            {
+                <tr>
+                    <td>@u.Username</td>
+                    <td>@u.Password</td>
+                </tr>
+            }
+         </tbody>
+     </table>
+</body>
+</html>
